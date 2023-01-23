@@ -1,0 +1,74 @@
+.nested-dropdowns {
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+	color:#333;
+    text-decoration: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    cursor: pointer;
+}
+
+
+.nested-dropdowns li {
+    cursor: pointer;
+
+    /* Spacing */
+    padding: 0.25rem;
+
+    /* Used to position the sub nested-dropdowns */
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 15px;
+}
+
+/* The sub nested-dropdowns */
+.nested-dropdowns ul {
+    /* Border */
+    border: 1px solid #d1d5db;
+    width: 200px;
+
+    /* Absolute position */
+    position: absolute;
+
+    /* Reset styles */
+    list-style-type: none;
+}
+
+/* The second level sub nested-dropdowns */
+.nested-dropdowns ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.nested-dropdowns li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Show the direct sub nested-dropdowns when hovering the list item */
+.nested-dropdowns li:hover > ul {
+    display: block;
+}
+
+a {
+    display: block;
+    color: inherit; 
+    text-decoration: inherit; 
+    padding: 0 15px;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding: 0;
+}
