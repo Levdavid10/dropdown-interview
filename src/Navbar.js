@@ -9,15 +9,13 @@ const Navbar = (props) => {
     const handleMenuSelection = (name, depth) => {
         setSelectedMenus((selectedMenus) => {
           const newSelectedMenus = [...selectedMenus];
-          // cut the menus to depth lenght
-          newSelectedMenus.length = depth;
           if (name !== '') {
             newSelectedMenus[depth] = name;
           }
           return newSelectedMenus;
         });
       };
-// onMouseLeave={() => setSelectedMenus([])}
+
       return (
         <>
             <h1>Complicated Pure CSS Drop Down Menu</h1>
