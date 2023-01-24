@@ -21,7 +21,7 @@ const Navbar = (props) => {
       return (
         <>
             <h1>Complicated Pure CSS Drop Down Menu</h1>
-            <ul className="nested-dropdowns">
+            <ul className="nested-dropdowns" onMouseLeave={() => setSelectedMenus([])}>
                 {menuItems.map((menu) => {
                     return (
                         <NavbarItem 
